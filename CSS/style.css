@@ -221,7 +221,7 @@
     }
 
     .background-planes {
-        background-image: url(2-back.png);
+        background-image: url(/medios/2-back.png);
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
@@ -348,16 +348,6 @@ footer a i, footer a svg {
 footer a:hover i, footer a:hover svg {
     color: #FEE600; 
     transform: scale(1.1); 
-}
-
-@media (max-width: 768px) {
-    .navegator-index, .login-index {
-        flex-direction: column;
-        text-align: center;
-    }
-    footer .col-md-4 {
-        margin-bottom: 20px;
-    }
 }
 
 
