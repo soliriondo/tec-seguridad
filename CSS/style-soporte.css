@@ -49,8 +49,9 @@ nav {
 /*LOG IN - INICIO*/
 .login-index {
     display: flex;
-    gap: 40px; 
+    gap: 50px; 
     margin-left: auto; 
+    margin-right: 20px; /* Ajusta el valor según el espacio deseado */
 }
 
 nav a {
