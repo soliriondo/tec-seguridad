@@ -85,7 +85,7 @@ nav a:hover {
 
 body {
     font-family: "Montserrat", serif;
-    background: url(/medios/4-back.png) no-repeat center center/cover;
+    background: url(medios/4-back.png) no-repeat center center/cover;
     color: #fff;
 }
 
@@ -109,7 +109,7 @@ nav a {
 }
 
 .faq-section {
-    background: url('4-back.png') no-repeat center center/cover;
+    background: url('medios/4-back.png') no-repeat center center/cover;
 }
 
 .faq-section h2 {
