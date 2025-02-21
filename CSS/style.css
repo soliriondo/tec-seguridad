@@ -69,7 +69,7 @@
      /* MAIN */
      .main {
         position: relative;
-        background-image: url(1-back.png);
+        background-image: url(/medios/1-back.png);
         background-size: cover;
         background-position: center;
         min-height: 80vh; 
