@@ -221,7 +221,7 @@
     }
 
     .background-planes {
-        background-image: url(medios/2-back.png);
+        background-image: url(/medios/2-back.png);
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
