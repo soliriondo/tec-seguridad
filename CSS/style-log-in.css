@@ -130,6 +130,12 @@ main {
     padding: 40px;
 }
 
+.welcome-section  p {
+    font-family: "Montserrat", serif;
+    font-weight: bold;
+    
+}
+
 .welcome-section button {
     border: 1px solid #000000;
     color: #000000;
