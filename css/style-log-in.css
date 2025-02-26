@@ -110,7 +110,7 @@ main {
 }
 
 .login-form .btn:hover {
-    background: linear-gradient(90deg, #000000, #2f2f2f);
+    background: linear-gradient(90deg, #ffffff, #b1b1b1);
 }
 
 .login-form .form-check-label {
