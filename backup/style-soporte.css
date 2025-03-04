@@ -1,0 +1,329 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+   /*INDEX*/
+   body {
+    margin: 0;
+    font-family: "Montserrat", serif;
+    color: #ffffff;
+}
+
+/* HEADER */
+    header {
+    display: flex;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-color: #000;
+    z-index: 1000;
+    padding: 15px 30px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* LOGO TEC */
+header .logo img {
+    width: 150px; 
+    height: auto; 
+}
+
+/*MENU DE NAV */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+/*NAVEGATOR HOGAR SEGURO - NOSOTROS - SOPORTE*/
+.navegator-index {
+    display: flex;
+    gap: 30px;
+    margin-left: 50px; 
+}
+
+/*LOG IN - INICIO*/
+.login-index {
+    display: flex;
+    gap: 50px; 
+    margin-left: auto; 
+    margin-right: 20px; 
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+/* PARA QUE CAMBIE EL COLOR DEL NAV CUANDO LO TOCO CON EL MOUSE */
+nav a:hover {
+    color: #fee600;
+}
+
+
+
+/* TITULO SOPORTE - PREGUNTAS FRECUENTES */
+
+.soporte-titulo {
+    background-color: #fee600;
+    color: #000000;
+    font-family: "Montserrat", serif;
+    text-align: center;
+    padding: 20px 10px;
+    justify-content: center;        
+}
+
+
+
+/* BODY DEL ACORDION */
+
+body {
+    font-family: "Montserrat", serif;
+    background: url(../medios/4-back.png) no-repeat center center/cover;
+    color: #fff;
+}
+
+header {
+    background-color: black;
+    color: white;
+    padding: 15px 0;
+    font-family: "Montserrat", serif;
+}
+
+header h1 {
+    font-size: 24px;
+    margin-left: 15px;
+    font-family: "Montserrat", serif;
+}
+
+nav a {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.faq-section {
+    background: url('4-back.png') no-repeat center center/cover;
+}
+
+.faq-section h2 {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+
+.faq-container {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    padding: 20px;
+}
+
+.accordion-column {
+    width: 40%; /
+}
+
+.accordion-button {
+    background-color: #fee600;
+    color: #000;
+    font-weight: bold;
+    border: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s ease;
+}
+
+.accordion-button:hover {
+    background-color: #e5d200;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.accordion-body {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    color: #333;
+    font-size: 14px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.faq-box {
+    background: rgba(255, 255, 255, 0.9);
+    color: #000;
+    max-width: 600px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 100%;
+}
+
+.faq-item {
+    border-bottom: 1px solid #ccc;
+}
+
+.faq-question {
+    background: none;
+    border: none;
+    width: 100%;
+    text-align: left;
+    padding: 15px;
+    font-size: 16px;
+    cursor: pointer;
+    outline: none;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+}
+
+.faq-answer {
+    display: none;
+    padding: 10px;
+    font-size: 14px;
+    color: #333;
+}
+
+.faq-item.active .faq-answer {
+    display: block;
+}
+
+.faq-question::after {
+    content: '+';
+    font-size: 20px;
+}
+
+.faq-item.active .faq-question::after {
+    content: '-';
+}
+
+
+/* FOOTER */
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+        .accordion-button {
+            background-color: #fee600;
+            color: #000;
+        }
+
+        .accordion-button:not(.collapsed) {
+            background-color: #e5d200;
+            color: #000;
+        }
+
+        .accordion-button:focus {
+            box-shadow: none;
+        }
+
+        .soporte-titulo {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .accordion-container {
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        .accordion-column {
+            width: 45%;
+            margin: 0 10px;
+        }
+
+footer {
+    width: 100%;
+    background-color: black;
+    color: white;
+    padding: 20px 0;
+    margin-top: auto;
+}
+
+footer a {
+    text-decoration: none;
+    color: white; 
+    transition: color 0.3s ease, transform 0.3s ease; 
+}
+
+footer a:hover {
+    color: #FEE600; 
+    text-decoration: none;
+}
+
+footer a i, footer a svg {
+    color: white; 
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+footer a:hover i, footer a:hover svg {
+    color: #FEE600; 
+    transform: scale(1.1); 
+}
+
+
+
+/* MEDIA Q */
+/* Desktop */
+@media (max-width: 1024px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+    nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+    .main {
+        padding: 40px;
+    }
+    .form-container {
+        position: static;
+        transform: none;
+        width: 100%;
+    }
+}
+
+/* tablet
+@media (max-width: 768px) {
+    .main .content h1 {
+        font-size: 1.8rem;
+    }
+    .navegator-index, .login-index {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    .background-planes {
+        padding: 40px 10px;
+    }
+} */
+ 
+/* Celulares */
+@media (max-width: 480px) {
+    header {
+        padding: 10px;
+    }
+    .main .content h1 {
+        font-size: 1.5rem;
+    }
+    .form-container {
+        padding: 15px;
+    }
+}

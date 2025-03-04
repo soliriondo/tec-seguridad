@@ -1,0 +1,77 @@
+@import 'variables', 'mixins';
+
+.login-container {
+    @extend %container;
+    width: 90%;
+    max-width: 800px;
+    background: $secondary-color;
+    display: flex;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    flex-wrap: wrap;
+    margin: auto;
+    margin-top: 50px;
+
+    .login-form {
+        padding: 40px;
+        flex: 1;
+        width: 50%;
+        color: $text-color;
+
+        a {
+            color: $text-color !important;
+        }
+
+        input {
+            background-color: #ffffff;
+        }
+
+        .btn {
+            @include button-style($primary-color, $secondary-color);
+        }
+
+        .btn:hover {
+            background: linear-gradient(90deg, #ffffff, #b1b1b1);
+        }
+
+        .form-check-label {
+            color: $text-color;
+        }
+    }
+
+    .welcome-section {
+        flex: 1;
+        background: linear-gradient(90deg, $primary-color, lighten($primary-color, 10%));
+        color: $secondary-color;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 40px;
+        min-width: 300px;
+
+        p {
+            font-weight: bold;
+        }
+
+        button {
+            @include button-style($secondary-color, $text-color);
+        }
+    }
+}
+
+// Media Q
+@media (max-width: 768px) {
+    .login-container {
+        flex-direction: column;
+        max-width: 90%;
+        margin-top: 30px;
+    }
+
+    .login-form, .welcome-section {
+        width: 100%;
+        padding: 20px;
+    }
+}

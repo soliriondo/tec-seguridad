@@ -1,0 +1,47 @@
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: $secondary-color;
+    z-index: 1000;
+    padding: 15px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .logo {
+        img {
+            width: 150px;
+            height: auto;
+        }
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+
+        .navegator-index,
+        .login-index {
+            display: flex;
+            gap: 30px;
+        }
+
+        .login-index {
+            margin-left: auto;
+        }
+
+        a {
+            color: $text-color;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease-in-out;
+
+            &:hover {
+                color: $primary-color;
+            }
+        }
+    }
+}

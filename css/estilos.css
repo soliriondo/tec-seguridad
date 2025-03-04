@@ -1,0 +1,221 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #000;
+  z-index: 1000;
+  padding: 15px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header .logo img {
+  width: 150px;
+  height: auto;
+}
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+header nav .navegator-index,
+header nav .login-index {
+  display: flex;
+  gap: 30px;
+}
+header nav .login-index {
+  margin-left: auto;
+}
+header nav a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease-in-out;
+}
+header nav a:hover {
+  color: #fee600;
+}
+
+footer {
+  width: 100%;
+  background-color: #000;
+  color: #ffffff;
+  text-align: center;
+  padding: 15px 0;
+  margin-top: auto;
+}
+footer a {
+  text-decoration: none;
+  color: #ffffff;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+footer a:hover {
+  color: #fee600;
+  transform: scale(1.1);
+}
+footer a i, footer a svg {
+  color: #ffffff;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+footer a:hover i, footer a:hover svg {
+  color: #fee600;
+}
+
+.login-container {
+  width: 90%;
+  max-width: 800px;
+  background: #000;
+  display: flex;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  flex-wrap: wrap;
+  margin: auto;
+  margin-top: 50px;
+}
+.login-container .login-form {
+  padding: 40px;
+  flex: 1;
+  width: 50%;
+  color: #ffffff;
+}
+.login-container .login-form a {
+  color: #ffffff !important;
+}
+.login-container .login-form input {
+  background-color: #ffffff;
+}
+.login-container .login-form .btn {
+  background-color: #fee600;
+  color: #000;
+  border: none;
+  cursor: pointer;
+}
+.login-container .login-form .btn:hover {
+  background-color: #cbb800;
+}
+.login-container .login-form .btn:hover {
+  background: linear-gradient(90deg, #ffffff, #b1b1b1);
+}
+.login-container .login-form .form-check-label {
+  color: #ffffff;
+}
+.login-container .welcome-section {
+  flex: 1;
+  background: linear-gradient(90deg, #fee600, #ffec32);
+  color: #000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 40px;
+  min-width: 300px;
+}
+.login-container .welcome-section p {
+  font-weight: bold;
+}
+.login-container .welcome-section button {
+  background-color: #000;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+}
+.login-container .welcome-section button:hover {
+  background-color: black;
+}
+
+@media (max-width: 768px) {
+  .login-container {
+    flex-direction: column;
+    max-width: 90%;
+    margin-top: 30px;
+  }
+  .login-form, .welcome-section {
+    width: 100%;
+    padding: 20px;
+  }
+}
+.soporte-titulo {
+  background-color: #fee600;
+  color: #000;
+  font-family: "Montserrat", serif;
+  text-align: center;
+  padding: 20px 10px;
+  font-weight: bold;
+}
+
+.faq-section {
+  background: url("../medios/4-back.png") no-repeat center center/cover;
+  padding: 20px;
+}
+.faq-section h2 {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.faq-container {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  padding: 20px;
+}
+
+.accordion-column {
+  width: 40%;
+}
+
+.accordion-button {
+  background-color: #fee600;
+  color: #000;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.3s ease;
+}
+.accordion-button:hover {
+  background-color: #cbb800;
+}
+.accordion-button:hover {
+  background-color: #cbb800;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.accordion-body {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  color: #333;
+  font-size: 14px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+}
+
+@media (max-width: 768px) {
+  .faq-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .accordion-column {
+    width: 100%;
+  }
+}
+body {
+  font-family: "Montserrat", serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.login-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}/*# sourceMappingURL=estilos.css.map */

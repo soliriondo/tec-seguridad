@@ -1,0 +1,399 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+    /*INDEX*/
+    body {
+            margin: 0;
+            font-family: "Montserrat", serif;
+            color: #ffffff;
+        }
+
+    /* HEADER */
+            header {
+            display: flex;
+            position: sticky;
+            top: 0;
+            width: 100%;
+            background-color: #000;
+            z-index: 1000;
+            padding: 15px 30px;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+    /* LOGO TEC */
+    header .logo img {
+            width: 150px; 
+            height: auto; 
+        }
+
+    /*MENU DE NAV */
+    nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+        }
+
+    /*NAVEGATOR HOGAR SEGURO - NOSOTROS - SOPORTE*/
+    .navegator-index {
+            display: flex;
+            gap: 30px;
+            margin-left: 50px; 
+        }
+
+    /*LOG IN - INICIO*/
+    .login-index {
+            display: flex;
+            gap: 30px; 
+            margin-left: auto; 
+        }
+
+    nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease-in-out;
+        }
+
+    /* PARA QUE CAMBIE EL COLOR DEL NAV CUANDO LO TOCO CON EL MOUSE */
+    nav a:hover {
+            color: #fee600;
+        }
+
+                
+   
+     /* MAIN */
+     .main {
+        position: relative;
+        background-image: url(../medios/1-back.png);
+        background-size: cover;
+        background-position: center;
+        min-height: 80vh; 
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0 30px;
+    }
+
+    .main .content {
+            max-width: 600px;
+            font-family: "Montserrat", serif;
+            font-style: normal;
+        }
+
+    .main .content h1 {
+            font-size: 36px;
+            font-weight: normal;
+            color: #fee600; 
+            margin-bottom: 20px;
+            font-family: "Montserrat", serif;
+            
+        }
+
+    .main .content button {
+            padding: 10px 20px;
+            font-size: 16px;
+            font-weight: bold;
+            border: none;
+            border-radius: 5px;
+            background-color: #ffffff;
+            color: #000;
+            cursor: pointer;
+        }
+
+    .main .content button:hover {
+            background-color: #ffffff;
+        }
+
+    /* FORMULARIO */
+    .form-container {
+        position: absolute;
+        top: 50%;
+        right: 30px;
+        transform: translateY(-50%);
+        background-color: #fee600; 
+        padding: 20px 30px;
+        border-radius: 10px;
+        color: #000;
+        width: 300px;
+        box-shadow: 0 0 10px #00000080;
+    }
+    
+    .form-container h2 {
+        font-size: 18px;
+        margin-bottom: 10px;
+        font-family: "Montserrat", serif;
+        color: white;
+    }
+    
+    .titulo-cotiza {
+        background-color: #000000;
+        border-radius: 10px;
+        padding: 10px; 
+    }
+    
+    .form-container p {
+        font-size: 10px;
+        margin-bottom: 15px;
+        font-weight: normal;
+        font-family: "Montserrat", serif;
+        color: white;
+    }
+    
+    .form-container input {
+        margin-top: 15px;
+        width: 100%; 
+        padding: 12px;
+        margin-bottom: 12px;
+        background-color: #000000;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+        font-weight: 500;
+        font-family: "Montserrat", serif;
+        color: white; 
+        box-sizing: border-box; 
+    }
+    
+    .button-container {
+        display: flex;
+        justify-content: center;
+        
+    }
+    
+    .form-container button {
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+        font-weight: bold;
+        cursor: pointer;
+        font-family: "Montserrat", serif;
+    }
+    
+
+    .form-container form input[type="text"] {
+        color: #ffffff;
+    }
+
+
+
+
+
+
+
+
+
+    /* HOGAR SEGURO */
+    /* el header esta configurado en el index MAS ARRIBA */
+    
+    .planes-titulo {
+        background-color: #fee600;
+        color: #000000;
+        font-family: "Montserrat", serif;
+        text-align: center;
+        padding: 20px 10px;
+        justify-content: center;        
+    }
+
+    .plan-titulo {
+        font-size: 1.8rem;
+        font-weight: bold;
+        color: #fee600;
+        
+    }
+    
+    .btn-consultar {
+        background-color: white;
+        border: 2px solid black;
+        font-weight: bold;
+        color: black;
+        font-family: "Montserrat", serif;
+    }
+    .btn-consultar:hover {
+        background-color: black;
+        color: white;
+        
+    }
+
+    .background-planes {
+        background-image: url(../medios/2-back.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-family: "Montserrat", serif;
+        flex-grow: 1;
+        padding-top: 160px;
+    }
+
+    .container {
+        flex: 1;
+    }
+
+    .plan-titulo {
+        font-size: 1.8rem;
+        font-weight: bold;
+        color: #fee600;
+        font-family: "Montserrat", serif;
+    }
+    
+    .lista-servicio {
+        list-style: none;
+        padding: 0;
+        color: white;
+        font-family: "Montserrat", serif;
+    }
+    
+    .lista-servicio li {
+        font-size: 15px;
+        font-family: "Montserrat", serif;
+    }
+    
+    .btn-consultar {
+        background-color: white;
+        font-weight:normal;
+        color: black;
+        padding: 10px 20px;
+        border-radius: 5px;
+        font-family: "Montserrat", serif;
+    }
+    
+    .btn-consultar:hover {
+        background-color: black;
+        color: white;
+        font-family: "Montserrat", serif;
+    }
+
+
+
+
+
+
+    /* NOSOTROS */
+
+body {
+    background-color: #FEE600;
+}
+
+/* CAROUSEL */
+.carousel-item img {
+    max-height: 500px;
+    object-fit: cover;
+    
+}
+
+
+.container-fluid {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+}
+
+.row {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+}
+
+
+.bg-warning {
+    background-color: #FEE600 !important; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* FOOTER */
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+footer {
+    width: 100%;
+    background-color: black;
+    color: white;
+    padding: 20px 0;
+    margin-top: auto;
+}
+
+footer a {
+    text-decoration: none;
+    color: white; 
+    transition: color 0.3s ease, transform 0.3s ease; 
+}
+
+footer a:hover {
+    color: #FEE600; 
+    text-decoration: none;
+}
+
+footer a i, footer a svg {
+    color: white; 
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+footer a:hover i, footer a:hover svg {
+    color: #FEE600; 
+    transform: scale(1.1); 
+}
+
+/* MEDIA Q */
+/* Desktop */
+@media (max-width: 1024px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+    nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+    .main {
+        padding: 40px;
+    }
+    .form-container {
+        position: static;
+        transform: none;
+        width: 100%;
+    }
+}
+/* Tablets */
+@media (max-width: 768px) {
+    .main .content h1 {
+        font-size: 1.8rem;
+    }
+    .navegator-index, .login-index {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    .background-planes {
+        padding: 40px 10px;
+    }
+}
+/* Celulares */
+@media (max-width: 480px) {
+    header {
+        padding: 10px;
+    }
+    .main .content h1 {
+        font-size: 1.5rem;
+    }
+    .form-container {
+        padding: 15px;
+    }
+}
+

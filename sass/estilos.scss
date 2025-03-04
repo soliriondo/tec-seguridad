@@ -1,0 +1,43 @@
+// estilos.scss
+@import "partials/variables";    
+@import "partials/mixins";
+@import "partials/reset";
+@import "partials/extends";
+@import "partials/header";
+@import "partials/footer";
+@import "partials/login";
+@import "partials/soporte";
+
+
+
+
+body {
+    font-family: "Montserrat", serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+
+
+// Mixin para botones reutilizables
+@mixin button-style($bg-color, $text-color) {
+    background-color: $bg-color;
+    color: $text-color;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    &:hover {
+        background-color: darken($bg-color, 10%);
+    }
+}
+
+// Extend para estructura de contenedores
+%container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
