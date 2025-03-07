@@ -1,17 +1,53 @@
-@mixin flex-center {
+// Mixin de flexbox 
+@mixin flexbox($justify: space-between, $align: center, $direction: row, $wrap: nowrap) {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: $justify;
+    align-items: $align;
+    flex-direction: $direction;
+    flex-wrap: $wrap;
   }
   
-  @mixin button-style($bg-color, $text-color) {
-    background-color: $bg-color;
-    color: $text-color;
+  // Mixin para botones 
+  @mixin button-style($bg, $text) {
+    background-color: $bg;
+    color: $text;
+    font-weight: bold;
     border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background 0.3s ease, transform 0.2s ease;
     cursor: pointer;
-    
+  
     &:hover {
-      background-color: darken($bg-color, 10%);
+      background-color: darken($bg, 10%);
+      transform: scale(1.05);
+    }
+  }
+  
+  
+  // Mixin para tarjetas o secciones con bordes redondeados y sombra
+  @mixin card-style($bg: white, $radius: 10px, $shadow: 0 4px 10px rgba(0, 0, 0, 0.1)) {
+    background-color: $bg;
+    border-radius: $radius;
+    box-shadow: $shadow;
+    padding: 20px;
+  }
+  
+  // Mixin de font para reutilizar en títulos y párrafos
+  @mixin typography($size, $weight: normal, $color: inherit) {
+    font-size: $size;
+    font-weight: $weight;
+    color: $color;
+  }
+  
+  // Mixin para media queries
+  @mixin responsive($breakpoint) {
+    @if $breakpoint == mobile {
+      @media (max-width: 576px) { @content; }
+    } @else if $breakpoint == tablet {
+      @media (max-width: 768px) { @content; }
+    } @else if $breakpoint == desktop {
+      @media (min-width: 1024px) { @content; }
     }
   }
   

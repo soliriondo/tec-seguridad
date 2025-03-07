@@ -1,0 +1,125 @@
+@import "../partials/variables";
+@import "../partials/mixins";
+@import "../partials/general";
+
+
+.index-main {
+    position: relative;
+    background-image: url(../medios/1-back.png);
+    background-size: cover;
+    background-position: center;
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 30px;
+  
+    .content {
+      max-width: 600px;
+      font-family: $family-font;
+      font-style: normal;
+  
+      h1 {
+        font-size: 36px;
+        font-weight: normal;
+        color: $amarillo-tec;
+        margin-bottom: 20px;
+      }
+  
+      button {
+        padding: 10px 20px;
+        font-size: 16px;
+        font-weight: bold;
+        border: none;
+        border-radius: 5px;
+        background-color: white;
+        color: black;
+        cursor: pointer;
+        transition: background 0.3s ease;
+  
+        &:hover {
+          background-color: $blanco-tec;
+        }
+      }
+    }
+  }
+  
+  // Formulario de contacto en Index
+  .form-container {
+    position: absolute;
+    top: 50%;
+    right: 30px;
+    transform: translateY(-50%);
+    background-color: $amarillo-tec;
+    padding: 20px 30px;
+    border-radius: 10px;
+    color: $negro-tec;
+    width: 300px;
+    box-shadow: 0 0 10px #00000080;
+  
+    h2 {
+      font-size: 18px;
+      margin-bottom: 10px;
+      text-align: center;
+    }
+  
+    .titulo-cotiza {
+      background-color: $negro-tec;
+      border-radius: 10px;
+      padding: 10px;
+    }
+  
+    p {
+      font-size: 10px;
+      font-weight: normal;
+      text-align: center;
+    }
+  
+    input {
+      margin-top: 15px;
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 12px;
+      background-color: $negro-tec;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      color: white;
+    }
+  
+    .button-container {
+      display: flex;
+      justify-content: center;
+    }
+  
+    button {
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      background-color: white;
+      color: black;
+      transition: background 0.3s ease;
+  
+      &:hover {
+        background-color: #ddd;
+      }
+    }
+  }
+  
+  // Media Queries para Index
+  @media (max-width: 576px) {
+    .index-main {
+      padding: 20px;
+    }
+  
+    .form-container {
+      position: static;
+      transform: none;
+      width: 100%;
+      padding: 15px;
+    }
+  }
+  

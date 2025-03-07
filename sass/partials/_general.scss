@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  // General Styles
+body {
+    font-family: $family-font;
+    color: $blanco-tec;
+    background-color: $amarillo-tec;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding-top: 80px;
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  .btn {
+    @include button-style($amarillo-tec, $negro-tec);
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+    color: $negro-tec;
+  }
+  
+  p {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+  // List Styles
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  // Responsive Grid System
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+  
+    .col {
+      flex: 1;
+      padding: 15px;
+    }
+  }
+  
+  // Media Queries
+  @media (max-width: 576px) {
+    .container {
+      width: 100%;
+      padding: 0 10px;
+    }
+  }
+
+
+
+//header navbar
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: $negro-tec;
+    z-index: 1000;
+    padding: 15px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  
+    .logo {
+      img {
+        width: 150px;
+        height: auto;
+      }
+    }
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  
+    .navegator-index {
+      display: flex;
+      gap: 30px;
+      margin-left: 50px;
+    }
+  
+    .login-index {
+      display: flex;
+      gap: 30px;
+      margin-left: auto;
+    }
+  
+    a {
+      color: $blanco-tec;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s ease-in-out;
+  
+      &:hover {
+        color: $amarillo-tec;
+      }
+    }
+  }
+  
+  

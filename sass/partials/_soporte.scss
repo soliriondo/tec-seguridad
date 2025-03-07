@@ -1,63 +1,50 @@
-@import 'variables', 'mixins';
 
+@import "variables";
+@import "mixins";
+@import "../partials/general";
+
+
+
+
+// Soporte Page
 .soporte-titulo {
-    background-color: $primary-color;
-    color: $secondary-color;
-    font-family: $font-family;
-    text-align: center;
-    padding: 20px 10px;
-    font-weight: bold;
+  background-color: $amarillo-tec;
+  color: $negro-tec;
+  text-align: center;
+  padding: 20px 10px;
+  font-family: $family-font;
 }
 
-.faq-section {
-    background: url('../medios/4-back.png') no-repeat center center/cover;
-    padding: 20px;
-
-    h2 {
-        font-size: 22px;
-        font-weight: bold;
-    }
+// Contenedor del acordeón
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
 }
 
-.faq-container {
-    display: flex;
-    justify-content: flex-end;
-    gap: 10px;
-    padding: 20px;
-}
-
-.accordion-column {
-    width: 40%;
+.accordion {
+  max-width: 800px;
+  margin: auto;
 }
 
 .accordion-button {
-    @include button-style($primary-color, $secondary-color);
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-    transition: box-shadow 0.3s ease;
+  background-color: $amarillo-tec;
+  color: $negro-tec;
+  font-weight: bold;
+  border: none;
+  transition: box-shadow 0.3s ease;
 
-    &:hover {
-        background-color: darken($primary-color, 10%);
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-    }
+  &:hover {
+    background-color: darken($amarillo-tec, 10%);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  }
 }
 
 .accordion-body {
-    background-color: #fff;
-    border: 1px solid #ddd;
-    color: #333;
-    font-size: 14px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-    border-radius: 4px;
+  background-color: $blanco-tec;
+  color: #333;
+  border-radius: 4px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  padding: 15px;
 }
 
-// MEDIA Q
-@media (max-width: 768px) {
-    .faq-container {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .accordion-column {
-        width: 100%;
-    }
-}
