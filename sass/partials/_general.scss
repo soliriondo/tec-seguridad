@@ -27,9 +27,14 @@ body {
     @include button-style($amarillo-tec, $negro-tec);
   }
   
-  h1, h2, h3, h4, h5, h6 {
+  h1, h2, h3, h4, h6 {
     font-weight: bold;
     color: $negro-tec;
+  }
+
+  h5 {
+    font-weight: bold;
+    color: $blanco-tec;
   }
   
   p {

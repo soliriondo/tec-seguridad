@@ -12,6 +12,12 @@ footer {
     color: $blanco-tec;
     text-align: center;
     padding: 15px 0;
+
+    p {
+      font-weight: bold;
+      color: $blanco-tec;
+    }
+    
   
     a {
       text-decoration: none;
